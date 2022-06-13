@@ -9,10 +9,11 @@ jobs:
     parameters:
         version:
           type: string
-          default: "latest"
+          default: "1.18"
     working_directory: ~/aform
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
+    # Go images: https://circleci.com/developer/images/image/cimg/go
     docker:
       - image: "cimg/go:<<parameters.version>>"
     # Add steps to the job
@@ -47,5 +48,5 @@ workflows:
         matrix:
           parameters:
             version:
-              - latest
               - 1.18.3
+              - 1.18
