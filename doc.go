@@ -1,6 +1,5 @@
 /*
-Package aform is a library that provides functionalities for working
-effectively with forms.
+Package aform provides functionalities for working effectively with forms.
 
 Introduction
 
