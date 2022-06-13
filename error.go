@@ -10,7 +10,7 @@ import (
 // default message. Example: If a BooleanField value is not a boolean, the
 // validation returns an error with the code BooleanErrorCode and the default
 // message BooleanErrorMessageEn. Error messages can be modified with the
-// function SetErrorMessages.
+// function Field.CustomizeError.
 const (
 	BooleanErrorCode   = "boolean"
 	EmailErrorCode     = "email"
@@ -109,7 +109,7 @@ func errorWrapIfNotAsError(err error) Error {
 }
 
 // customizeErrors customizes errors of a field with the error messages set
-// with SetErrorMessages.
+// with Field.CustomizeError.
 func customizeErrors(errors []Error, customized map[string]Error) []Error {
 	if len(errors) == 0 {
 		return errors
