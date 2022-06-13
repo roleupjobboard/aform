@@ -1,11 +1,10 @@
 /*
-package aform is a library that provides tools to work
-effectively with forms.
+Package aform provides functionalities for working effectively with forms.
 
 Introduction
 
 This package provides simple tools to create forms, to render
-them as HTML and to validate data bound to a form.
+them as HTML and to do forms' input validations.
 
 Let's suppose you want to create a form to get the user's name.
 You'll need something like this in your template.
