@@ -119,7 +119,7 @@ If it’s unbound, it cannot do validation (because there’s no data to
 validate), but it can still render the blank form as HTML.
 
 To bind a Form, we use the method Form.BindRequest. Method Form.BindData can
-be used to when the application needs to modify the default behavior.
+be used too, when the application needs to modify the default behavior.
 
 */
 package aform
